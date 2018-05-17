@@ -1,0 +1,390 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+
+    top: 0px;
+}
+
+.grab-logo {
+    width: 91px;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+#navbar a:hover {
+    color :green;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 10px;
+}
+
+#navbar .left-menu {
+    width: 500px;
+    position: absolute;
+    top: 35%;
+    left: 13%;
+}
+
+#navbar .right-menu {
+    width: 341px;
+    position: absolute;
+    right: 7%;
+    top: 35%;
+}
+
+#navbar ul li img {
+    width: 100px;
+    position: absolute;
+    top: -31%;
+
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#navbar ul li img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+#navbar .grabber {
+    position: absolute;
+    color: green;
+    top: 25%;
+    right: 32%;
+
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 5px 20px 5px 15px;
+}
+
+#banner {
+    height: 484px;
+    position: relative;
+    background-color: papayawhip;
+
+    /* background: url(https://www.grab.com/vn/wp-content/uploads/sites/11/2016/05/01_hero_banner.jpg);
+    background-size: cover;
+    background-position: center; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#banner .grab-intro{
+    position: absolute;
+    color: white;
+    left: 12%;
+    top: 30%;
+    z-index: 1;
+}
+
+#banner .grab-intro .download {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+#banner .grab-intro .download:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#learn-more {
+    height: 664px;
+    position: relative;
+    background-color: green;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+#learn-more video {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+#learn-more .btn-learn {
+    background-color: white;
+    border: none;
+    color: green;
+    padding: 15px 32px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#vehicle-options {
+    height: 550px;
+    position: relative;
+    background-color: white;
+    color: white;
+
+    background: url(https://www.grab.com/vn/wp-content/uploads/sites/11/2016/05/bike-2-2.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vehicle-options .caption {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+}
+
+#vehicle-options .option-intro {
+    position: absolute;
+    width: 360px;
+    height: 162px;
+    top: 45%;
+    text-align: center;
+    padding: 20px;
+}
+
+#vehicle-options .option-intro .option-intro-content {
+    background-color: black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+#vehicle-options .carousel-option {
+    position: absolute;
+    top: 75%;
+}
+
+#vehicle-options .carousel-option ol {
+    padding-left: 0px;
+}
+
+#vehicle-options .carousel-option ol li{
+    display: inline;
+    margin: 0px 30px;
+    text-align: center;
+}
+
+#vehicle-options .carousel-option ol i {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#vehicle-options .carousel-option ol i:hover {
+    background-color: green;
+}
+
+#download {
+    height: 458px;
+    position: relative;
+    background-color: gray;
+
+    background: url(https://www.grab.com/vn/wp-content/uploads/sites/11/2016/04/dg-dl-grab-back.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#download .hr-rule {
+    position: absolute;
+    align-self: center;
+    left: 32%;
+    top: 55%;
+}
+
+#download .hr-rule hr {
+    width: 200px;
+    
+
+    transform:rotate(90deg);
+     -o-transform:rotate(90deg);
+     -moz-transform:rotate(90deg);
+     -webkit-transform:rotate(90deg);
+}
+
+#download .first-way img{
+    width: 120px;
+    height: 120px;
+}
+
+#download .second-way img {
+    width: 148px;
+    height: 52px;
+
+    padding: 20px;
+    padding-left: 60px;
+}
+
+#download .download-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+#download .download-options .second-way {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    top: 17%;
+    left: 80%;
+
+}
+
+#footer {
+    height: 566px;
+    position: relative;
+    background-color: green;
+    color: white;
+}
+
+#footer .contact-info {
+    width: 270px;
+    position: absolute;
+    font-size: 120%;
+    font-weight: 300;
+
+    left: 81px;
+    top: 9%;
+
+}
+
+#footer .contact-info img {
+    width: 91px;
+}
+
+#footer .site-map {
+    width: 900px;
+    position: absolute;
+    color: white;
+
+    left: 371px;
+    top: 10%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer li {
+    list-style-type: none;
+    margin: 8px;
+    font-size: 17px;
+}
+
+#footer ul {
+    padding-left: 0px;
+}
+
+#footer .company,.services,.corporate,.ride {
+    width: 225px;
+}
+
+#footer .tm-logo {
+    width: 150px;
+    position: absolute;
+    top: 90%;
+    right: 10%;
+}
+
+#footer .bottom-hr {
+    position: absolute;
+    width: 500px;
+    left: 30%;
+    bottom: 30%;
+}
+
+#footer .social-network {
+    position: absolute;
+    left: 45%;
+    bottom: 12%;
+    text-align: center;
+}
+
+#work-flow {
+    position: relative;
+    height: 625px;
+    background-color: white;
+    text-align: center;
+}
+
+#work-flow .tinny-hand {
+    width: 500px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+#work-flow .tinny-hand img {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    z-index: 1;
+    left: 48px;
+}
+
+#work-flow .work-step {
+    width: 500px;
+    position: absolute;
+    top:20%;
+    right: 15%;
+    text-align: left;
+}
+
+#work-flow .tinny-hand .changed-images {
+    width: 208px;
+    height: 314px;
+    position: absolute;
+    background-color: springgreen;
+
+    background: url(https://www.grab.com/vn/wp-content/uploads/sites/11/2016/05/1_step-1.jpg);
+    background-size: cover;
+
+    top: 59px;
+    left: 161px;
+    z-index: 0;
+}
